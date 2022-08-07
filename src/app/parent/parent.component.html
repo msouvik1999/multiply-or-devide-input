@@ -1,0 +1,5 @@
+<input [(ngModel)]="inputNumber" class="flexdiv" type="number">
+<app-child [inputNumber]="inputNumber" (childData)="childData($event)" ></app-child>
+<div class="flexdiv">
+    <h3>Result:</h3><p>{{showData}}</p>
+</div>
